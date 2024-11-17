@@ -24,6 +24,10 @@ header > nav > ul > li > a{
     color: rgb(65, 65, 65);
 }
 
+.menu {
+    display: none;
+}
+
 .description {
     display: flex;
     justify-content: center;
@@ -55,7 +59,7 @@ header > nav > ul > li > a{
 }
 
 .description > img {
-    width: 20%;
+    width: 400px;
 }
 
 .trusted_companies {
@@ -140,3 +144,83 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 1040px) {
+    .description {
+      padding: 30px;
+      padding-top: 150px;
+    }
+
+    .description {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+  
+    .description > div {
+      width: 300px;
+      align-items: center;
+    }
+  
+    .description > div > h2 {
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    .description > div > p {
+      text-align: center;
+    }
+  
+    .description > img {
+      width: 350px;
+    }
+}
+  
+@media (min-width: 1400px) {
+    .description {
+      justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+      padding: 20px;
+    }
+  
+    .header > nav {
+      display: none;
+    }
+  
+    .menu {
+        display: block;
+        cursor: pointer;
+        width: 5%;
+        margin-left: 90px;
+    }
+
+    .description {
+        padding: 0;
+    }
+
+    .description > div > button {
+        font-size: 10px;
+        width: 30%;
+        height: 20%;
+    }
+
+    .description > img {
+        width: 250px;
+      }
+  
+    .trusted_companies {
+      margin-top: 20px;
+    }
+
+    .people > h2 {
+        font-size: 15px;
+    }
+
+    .people > ul {
+        flex-wrap: wrap;
+    }
+    
+  }
